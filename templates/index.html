@@ -19,9 +19,9 @@
       <h1>BUS 371 Attendence</h1>
       <form
         hx-boost="true"
-        hx-post="/"
+        hx-post="{{ url_for('index') }}"
         hx-swap="outerHTML"
-        action="/"
+        action="{{ url_for('index') }}"
         method="post"
       >
         {{ form.csrf_token }}
